@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spotify • Static HTML Mock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="brand"><span class="logo" aria-hidden="true"></span><span class="hide-sm">Spotify</span></div>
+      <nav class="nav" aria-label="Primary">
+        <a class="active" href="#home">🏠 <span class="hide-sm">Home</span></a>
+        <a href="#search">🔎 <span class="hide-sm">Search</span></a>
+        <a href="#library">📚 <span class="hide-sm">Your Library</span></a>
+        <a href="#create">➕ <span class="hide-sm">Create Playlist</span></a>
+        <a href="#liked">💚 <span class="hide-sm">Liked Songs</span></a>
+      </nav>
+
+      <div class="library">
+        <div class="lib-head"><strong>Your library</strong><span>＋</span></div>
+        <div class="pill">Playlists</div>
+        <div class="pill">Artists</div>
+        <div class="pill">Albums</div>
+      </div>
+      <footer>© Static mock. No playback.</footer>
+    </aside>
+
+    <!-- Topbar -->
+    <header class="topbar" role="banner">
+      <div class="search">
+        <span class="btn" aria-hidden="true">←</span>
+        <span class="btn" aria-hidden="true">→</span>
+        <div class="field" role="search"><span>What do you want to play?</span></div>
+      </div>
+      <div class="top-actions">
+        <a class="btn" href="#premium">Explore Premium</a>
+        <a class="btn" href="#install">Install App</a>
+        <span class="badge">User ▾</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main class="content" id="home" tabindex="-1">
+      <h1 style="margin-bottom:14px">Good evening</h1>
+
+      <!-- Home rows -->
+      <section class="section">
+        <div class="row-head"><h2>Recommended for you</h2><a class="row-link" href="#">Show all</a></div>
+        <div class="card-grid">
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=101') center/cover"></div><div class="title">Tollywood Pearls</div><div class="subtitle">Finest Telugu tracks from the past decade.</div></article>
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=102') center/cover"></div><div class="title">Yo Hai Haryanvi</div><div class="subtitle">Fresh Haryanvi bangers to hype your day.</div></article>
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=103') center/cover"></div><div class="title">Kollywood Cream</div><div class="subtitle">The creamiest of Tamil cinema.</div></article>
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=104') center/cover"></div><div class="title">Bollywood Central</div><div class="subtitle">Today’s Hindi hits, all in one place.</div></article>
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=105') center/cover"></div><div class="title">Hot Hits India</div><div class="subtitle">The hottest 50 tracks, updated often.</div></article>
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=106') center/cover"></div><div class="title">Punjabi 101</div><div class="subtitle">Ultimate Punjabi playlist to get moving.</div></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row-head"><h2>Big Hits!</h2><a class="row-link" href="#">Show all</a></div>
+        <div class="card-grid">
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=111') center/cover"></div><div class="title">Bollywood Love</div><div class="subtitle">Romance melodies and heartbeats.</div></article>
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=112') center/cover"></div><div class="title">Trending Valentine’s</div><div class="subtitle">Your date night soundtrack.</div></article>
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=113') center/cover"></div><div class="title">Party Starters</div><div class="subtitle">Kick off with sure-shot bops.</div></article>
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=114') center/cover"></div><div class="title">Chill Beats</div><div class="subtitle">Lofi instrumentals to relax and study.</div></article>
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=115') center/cover"></div><div class="title">Workout Mix</div><div class="subtitle">Energy for sets and sprints.</div></article>
+          <article class="card"><div class="thumb" style="background:url('https://picsum.photos/400?random=116') center/cover"></div><div class="title">Retro Rewind</div><div class="subtitle">Throwback classics and nostalgia.</div></article>
+        </div>
+      </section>
+
+      <!-- Search -->
+      <section id="search" class="section panel">
+        <div class="row-head"><h2>Search</h2><span class="chip">All • Music • Podcasts • Artists</span></div>
+        <div class="card-grid" style="grid-template-columns:repeat(8,minmax(0,1fr))">
+          <div class="card" style="background:#dc2626"><div class="title">Podcasts</div></div>
+          <div class="card" style="background:#16a34a"><div class="title">Live Events</div></div>
+          <div class="card" style="background:#2563eb"><div class="title">Made For You</div></div>
+          <div class="card" style="background:#7c3aed"><div class="title">New Releases</div></div>
+          <div class="card" style="background:#ca8a04"><div class="title">Hindi</div></div>
+          <div class="card" style="background:#059669"><div class="title">Punjabi</div></div>
+          <div class="card" style="background:#db2777"><div class="title">Tamil</div></div>
+          <div class="card" style="background:#0ea5e9"><div class="title">Telugu</div></div>
+        </div>
+      </section>
+
+      <!-- Your library -->
+      <section id="library" class="section grid-two">
+        <div class="panel">
+          <div class="row-head"><h2>Your Playlists</h2><a class="row-link" href="#">Create</a></div>
+          <div class="list">
+            <div class="row"><div class="num">1</div><div><strong>Daily Mix 1</strong><div class="subtitle">Mixed by Spotify</div></div><div class="chip">Playlist</div></div>
+            <div class="row"><div class="num">2</div><div><strong>Gym Anthems</strong><div class="subtitle">You • 120 songs</div></div><div class="chip">Playlist</div></div>
+            <div class="row"><div class="num">3</div><div><strong>Lo-Fi Focus</strong><div class="subtitle">Curated • 80 songs</div></div><div class="chip">Playlist</div></div>
+            <div class="row"><div class="num">4</div><div><strong>Discover Weekly</strong><div class="subtitle">Mixed by Spotify</div></div><div class="chip">Playlist</div></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="row-head"><h2>Recently Played</h2><span class="chip">Last 7 days</span></div>
+          <div class="list">
+            <div class="row"><div class="num"><div class="cover"></div></div><div><strong>Heat Waves</strong><div class="subtitle">Glass Animals</div></div><div class="num">3:58</div></div>
+            <div class="row"><div class="num"><div class="cover"></div></div><div><strong>Kesariya</strong><div class="subtitle">Arijit Singh</div></div><div class="num">4:28</div></div>
+            <div class="row"><div class="num"><div class="cover"></div></div><div><strong>Excuses</strong><div class="subtitle">AP Dhillon</div></div><div class="num">2:56</div></div>
+            <div class="row"><div class="num"><div class="cover"></div></div><div><strong>Tu Hai Kahan</strong><div class="subtitle">AUR</div></div><div class="num">3:22</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Liked songs -->
+      <section id="liked" class="section panel">
+        <div class="row-head"><h2>Liked Songs</h2><span class="chip">240 songs</span></div>
+        <div class="list">
+          <div class="row"><div class="num">★</div><div><strong>Perfect</strong><div class="subtitle">Ed Sheeran • ÷</div></div><div class="num">4:23</div></div>
+          <div class="row"><div class="num">★</div><div><strong>Blinding Lights</strong><div class="subtitle">The Weeknd • After Hours</div></div><div class="num">3:20</div></div>
+          <div class="row"><div class="num">★</div><div><strong>Kesariya</strong><div class="subtitle">Arijit Singh • Brahmāstra</div></div><div class="num">4:28</div></div>
+        </div>
+      </section>
+
+      <section class="panel" style="color:var(--muted)">
+        We and our partners use cookies to personalize and measure your experience. This static clone stores nothing.
+      </section>
+    </main>
+
+    <!-- Player (static UI only; no JS) -->
+    <div class="player" role="region" aria-label="Player">
+      <div class="track">
+        <div class="cover" style="background:url('https://picsum.photos/200?random=170') center/cover"></div>
+        <div class="meta"><div class="t">Random Track</div><div class="a">Some Artist</div></div>
+      </div>
+      <div>
+        <div class="controls" aria-label="Playback controls">
+          <div class="control" title="Shuffle">⤮</div>
+          <div class="control" title="Previous">⏮</div>
+          <div class="control" title="Play/Pause">▶︎</div>
+          <div class="control" title="Next">⏭</div>
+          <div class="control" title="Repeat">🔁</div>
+        </div>
+        <div class="progress" aria-label="Progress">
+          <span>1:05</span><div class="bar" aria-hidden="true"></div><span>3:45</span>
+        </div>
+      </div>
+      <div class="right">
+        <span title="Lyrics">♪</span>
+        <span title="Queue">≡</span>
+        <span title="Connect">🖥️</span>
+        <div class="slider" title="Volume"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
